@@ -1,4 +1,9 @@
 @import 'variables';
+:root{
+  --main-image-size: 300px;
+  --li-images: 200px;
+  --border-color: #3F8DA8;
+}
 
 body {
   background: url('../../dist/images/park.jpg') center/cover;
@@ -13,4 +18,37 @@ nav {
 
 .dog-icon {
   width: 50px;
+}
+.doggie{
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 4px;
+  border-color: var(--border-color);
+  height: var(--li-images);
+}
+.large{
+  height: var(--main-image-size);
+  width: var(--main-image-size);
+  
+}
+
+figure{
+  flex-direction: column;
+  margin: 90
+  px;
+  max-height: 495px;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+article > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

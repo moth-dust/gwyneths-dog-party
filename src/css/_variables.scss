@@ -1,2 +1,9 @@
 $main-accent-color: #3F8DA8;
 $secondary-accent-color: #92E0E5;
+@mixin dog-bubble($image){
+    image: $image;
+    image{
+        border-radius: 50%;
+    }
+    
+}
